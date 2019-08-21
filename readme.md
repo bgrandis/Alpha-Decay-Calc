@@ -5,10 +5,13 @@ Calculates the theoretical stability of nucleons to alpha decay using the semi-e
 ## Overview / How to use
 
 Constants Used:
-* Coeficiente de Volume              Av =
-* Coeficiente de superficie          As = 
-* Coeficiente de Coulombian          Ac = 
-* Coeficiente de Simetria            Asim = 
+* Coeficiente de Volume              Av = 15.68 MeV
+* Coeficiente de superficie          As = 18.56 MeV
+* Coeficiente de Coulombian          Ac = 0.717 MeV
+* Coeficiente de Simetria            Asim = 28.1 MeV
+
+* Mass of Neutron                    Mn = 938.272 MeV*c^2
+* Mass of Proton                     Mp = 939.566 MeV*c^2
 
 
 ## Algorithm description

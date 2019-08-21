@@ -25,7 +25,7 @@ class Nucleon():
         self.AlphaStable = True
 
     def Calculate_Mass(self):
-        if(self.BindingE == 0)
+        if(self.BindingE == 0):
             self.Calculate_BindingE()
         
         self.Mass = M_NEUTRON * self.N + M_PROTON * self.Z - self.BindingE
