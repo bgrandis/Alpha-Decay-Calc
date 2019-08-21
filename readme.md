@@ -22,7 +22,7 @@ decay can (and will) spontaneous occurs (the time length it may take for it to h
 So, the steps involved in this are:
 1. Calculate the Mass of a Nucleon (Z,A)
 2. Calculate the Mass of the resulting child nucleon (Z-2,A-4) if an alpha decay would occur
-3. Check if Q > 0 ,where Q =  M(Z,A) - (M(Z-2,A-4) + M(2,4))
+3. Check if Q > 0 ,where Q =  M(Z,A) - (M(Z-2,A-4) + Maplha)
 
 The main work this algorithm does is to calculate the masses using Z and A.
 
