@@ -18,6 +18,7 @@ class Nucleon():
 
     """
     def __init__(self,Z,A):
+        print("fiz um nucle")
         self.Z = Z
         self.A = A
         self.N = A - Z
@@ -51,8 +52,8 @@ class Nucleon():
 
     def Check_Stability(self):
         if self.Mass == 0:
-            self.Calculate_Mass
-                       
+            self.Calculate_Mass()
+
         decayed_nucleon = Nucleon(self.Z-2,self.A-4)
         decayed_nucleon.Calculate_Mass()
         Q = self.Mass - (decayed_nucleon.Mass + M_ALPHA)
@@ -66,10 +67,10 @@ class Nucleon():
 
 def main():
     print("Start")
-    Z = 3
-    A = 1
-    Carbono = Nucleon(Z,A)
-    print(Carbono.Check_Stability())
+    Z = 92
+    A = 235
+    Uranium = Nucleon(Z,A)
+    print(Uranium.Check_Stability())
     
     
 
