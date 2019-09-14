@@ -55,7 +55,7 @@ This formula works by considering five effects divided in five different correct
 
 The full Formula is:
 
-B(Z,A) = Av*A - As*(A**2/3) - Ac*(Z**2/A**1/3) - Aa*((A - 2Z)**2 / A) + Delta_Coupling
+B(Z,A) = Av*A - As*(A**2/3) - Ac*( Z**2/A**1/3) - Aa*((A - 2Z)**2 / A) + Delta_Coupling
 
 A more appropriate explanation of the terms can be found in the reference.
 
