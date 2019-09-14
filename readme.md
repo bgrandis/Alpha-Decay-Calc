@@ -2,19 +2,17 @@
 
 Calculates the theoretical stability of nucleons to alpha decay using the semi-empirical formula of Bethe-Weizsacker
 
-## Overview / How to use
+# Overview / How to use
 
 Constants Used:
-* Coeficiente de Volume              Av = 15.68 MeV
-* Coeficiente de superficie          As = 18.56 MeV
-* Coeficiente de Coulombian          Ac = 0.717 MeV
-* Coeficiente de Simetria            Asim = 28.1 MeV
+* Coeficiente de Volume              Av = 15.56 MeV
+* Coeficiente de superficie          As = 17.23 MeV
+* Coeficiente de Coulombian          Ac = 0.697 MeV
+* Coeficiente de Simetria            Asim = 23.285 MeV
+* Coeficiente de Paridade            Ab = 12.0 MeV
 
 * Mass of Neutron                    Mn = 938.272 MeV*c^2
 * Mass of Proton                     Mp = 939.566 MeV*c^2
-
-
-## Algorithm description
 
 This theory is based on calculating the actual mass of 2 nucleus e comparing if an alpha decay would put the resulting child nucleon (and alpha particle) in a lower energy state. if it does the
 decay can (and will) spontaneous occurs (the time length it may take for it to happen is another history).
@@ -25,6 +23,8 @@ So, the steps involved in this are:
 3. Check if Q > 0 ,where Q =  M(Z,A) - (M(Z-2,A-4) + Maplha)
 
 The main work this algorithm does is to calculate the masses using Z and A.
+
+* It's Also possible to only use the algorithm to calculate Masses using the semi-empirical formula.
 
 ## Theory Overview
 
@@ -55,11 +55,10 @@ This formula works by considering five effects divided in five different correct
 
 The full Formula is:
 
+B(Z,A) = Av*A - As*(A**2/3) - Ac*(Z**2/A**1/3) - Aa*((A - 2Z)**2 / A) + Delta_Coupling
+
 A more appropriate explanation of the terms can be found in the reference.
 
-
-## About
-Done by Bruno Grandi Sgambato as an assignment for a nuclear physics course
 
 ## Referencies
 
